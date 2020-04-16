@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>V-MART</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="shortrcut icon" href="./img/v.png">
+    <link rel="stylesheet" type="text/css" href="market.css">
+    <script src="https://kit.fontawesome.com/6079226620.js" crossorigin="anonymous"></script>
+    <script src="market.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Starts -->
+
+    <div class="conatiner header text-center">
+        <div class="logo">
+            <img src="./img/v.png">
+        </div>
+       
+        <div class="line"></div>
+    </div>
+
+    <!-- Navbar starts -->
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#categories" onclick="openOverlay()">Categories</a>
+        <a href="#cart">Cart</a>
+        <a href="#about">About</a>
+        <a href="log-in.html" class="right"><i class="fas fa-user"></i> User</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+    <!-- Navbar closes -->
+    <!-- Categories Overlay starts-->
+    <div class="overlay" id="categories">
+        <!-- Button to close the overlay -->
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeOverlay()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <div class="row">
+                <div class="col-md-4">
+                    <strong>Footwear &raquo; </strong>
+                    <ul>
+                        <li>Sports Shoes</li>
+                        <li>Casual Shoes</li>
+                        <li>Formal Shoes</li>
+                        <li>Sneekers</li>
+                        <li>Sandals</li>
+                        <li>Boot Shoes</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <strong>Clothing &raquo; </strong>
+                    <ul>
+                        <li>Tshirts and Shirts</li>
+                        <li>Trousers</li>
+                        <li>Blazers</li>
+                        <li>3-piece Suits</li>
+                        <li>Sarees</li>
+                        <li>Kurtas</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <strong>Appliances &raquo; </strong>
+                    <ul>
+                        <li>Laptops</li>
+                        <li>Tv and Desktops</li>
+                        <li>Refrigerator</li>
+                        <li>AC and Coolers</li>
+                        <li>Microwave and Mixtures</li>
+                        <li>Washing Machines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categories Overlay CLoses -->
+    <!-- carousel starts -->
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+            <li class="active" data-target="#myCarousel" data-slide-to="1"></li>
+            <li class="active" data-target="#myCarousel" data-slide-to="2"></li>
+            <li class="active" data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <!-- Wrappers -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/suits.jpg">
+                <div class="carousel-caption cc">
+                    Raymond Suit for Mens
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/macbook (1).jpg">
+                <div class="carousel-caption cc">
+                    <strong>MACBOOK</strong><br>
+                    Pro Apple 24 * 20
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/watch.jpg">
+                <div class="carousel-caption cc">
+                    <strong>Rolex</strong><br>
+                    Wrist watch
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/handset.png">
+                <div class="carousel-caption cc">
+                    <strong>Realme handset</strong><br>
+                    Notched Screen
+                </div>
+            </div>
+        </div>
+        <!-- Left right Controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<div class="col-md-1"></div>
+</div><br>
+    <!-- carousel close -->
+    <!-- Items Body Starts -->
+   <div class="h "> <strong><h3>Just For You</h3> </strong></div>
+    <div class="item text-center">
+        <div class="row">
+            <!-- First Column -->
+            <div class="col-md-3">
+                <div class="itemcard">
+                    <img src="./img/alexa-4758340_1920.jpg">
+                    <div class="info text-center">
+                        Alexa <br>
+                        199 USD $
+                    </div>
+                </div>
+                <div class="itemcard">
+                    <img src="./img/bluetooth.jpg">
+                    <div class="info text-center">
+                        Headphone JBL <br>
+                        1999 rs.
+                    </div>
+                </div>
+                <div class="itemcard">
+                    <img src="./img/classic-clothes-commerce-fashion-298863.jpg">
+                    <div class="info text-center">
+                        Special Set <br>
+                        600 USD $
+                    </div>
+                </div>
+            </div>
+            <!-- Second column -->
+            <div class="col-md-3">
+                <div class="itemcard">
+                    <img src="./img/lp.jpg">
+                    <div class="info text-center">
+                        Apple Macbook 20X16 inch<br>
+                        1.2 lacs
+                    </div>
+                </div>
+                <div class="itemcard">
+                    <img src="./img/cam.jpg">
+                    <div class="info text-center">
+                        CANON Camera <br>
+                        2500 USD $
+                    </div>
+                </div>
+                <div class="itemcard">
+                    <img src="./img/raymond suits.jpg">
+                    <div class="info text-center">
+                        Raymond suits<br>
+                        600 USD $
+                    </div>
+                </div>
+            </div>
+            <!-- Third column -->
+            <div class="col-md-3">
+                <div class="itemcard">
+                    <img src="./img/per.jpg">
+                    <div class="info text-center">
+                        DElighted Perfume<br>
+                        400 rs.
+                    </div>
+                </div>
+                <div class="itemcard">
+                    <img src="./img/w1 (1).jpg">
+                    <div class="info text-center">
+                        Sonata Wrist Watch <br>
+                        250 USD $
+                    </div>
+                </div>
+                <div class="itemcard">
+                    <img src="./img/sandc.jpg">
+                    <div class="info text-center">
+                        Sand clock Antique<br>
+                        2500 rs.
+                    </div>
+                </div>
+            </div>
+            <!-- Fourth Column -->
+            <div class="col-md-3">
+                <div class="itemcard">
+                    <img src="./img/per2.jpg">
+                    <div class="info text-center">
+                        Fragrance Full<br>
+                        900 rs.
+                    </div>
+                </div>
+                <div class="itemcard">
+                    <img src="./img/clckl.jpg">
+                    <div class="info text-center">
+                        Wall Clock <br>
+                        600 rs
+                    </div>
+                </div>
+                <div class="itemcard">
+                    <img src="./img/buddha.jpg">
+                    <div class="info text-center">
+                        Buddha Statue<br>
+                        190 USD
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <!-- Item Body Closes -->
+    <div class="line"></div>
+   <!-- Footer Starts -->
+   <div class="Footer">
+        <div class="h "> <strong><h3>About</h3> </strong></div>
+       <strong> V-MART </strong>is one of the best shopping apps online in India. With over 1,000, 000 products from multiple categories, 
+        you can shop whatever you want with best prices & high quality. Free shipping & Cash on Delivery(COD) services are supported,
+         giving you secure & delightful shopping experience and make sure you purchase all goods at its factory price!<br>
+
+        Reasons you should choose us:<br>
+        
+        <strong>Fashion & Chic: </strong>Shopping online for trendy styles and latest items.Become fashion icon and dress chic 
+        just as celebrities and fashion bloggers.<br>
+        <strong> Price:</strong> Coupons, benefits, discounts, flash sale, free gifts & great deals for new users. 
+        Cost less and save more! Better and cheaper products than malls at free online shopping app Club Factory!<br>
+       <strong> High Quality:</strong> EVERY product has gone through 21-point QC standards.<br>
+        <strong> payment & Fast delivery:</strong> Cash on Delivery (COD) for most areas, Mastercard, VISA and many more payment methods
+         are supported. Enjoy free shipping at the same time! Shopping online and track your order anytime! If you have any worry,
+          our friendly 24/7 Online Customer Service team is always here for you. If the product has quality problems, it can be returned
+           for free within 9 days of delivery.<br>
+       <i> "Club Factory offers millions of all kinds of affordable & stylish products ranging from clothing, shoes, bags, accessories, 
+           jewelry, home decoration, electronics, watches, beauty, health, books, products for office, sports & fitness. 
+           You can get Club Factory coupon and special discount up to 80% off during sales on fashion clothing for women, men and kids."</i><br>
+        
+       <strong> Brands:-</strong> 3m Aanoad sarees Abooza Adcom Adidas Ajanta Aks Anonoi designoer Apple Arian Beezy Besiva Bohemia 
+       Campus sutra Captcha Cello Clovia Cortina Cospex Detel<br><br>
+       <div class="line"></div><br>
+       <div class="share text-center"><div class="h "> <strong><h3>Share Now</h3> </strong></div>
+       <i class="fab fa-whatsapp wa"></i>
+       <i class="fab fa-instagram insta"></i>
+       <i class="fab fa-twitter tw"></i>
+       <i class="fab fa-facebook fb"></i>
+    </div>
+   </div>
+</body>
+
+</html>

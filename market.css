@@ -1,0 +1,194 @@
+body{
+  background-color: #051622;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #051622;
+}
+.topnav a{
+    float: left;
+    text-decoration: none;
+    display: block;
+    color: #1BA098;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 15px;
+}
+.topnav a:hover{
+    background-color: black
+}
+
+.topnav .icon{
+    display: none;
+}
+.topnav .right{
+    float:right;
+}
+.carousel-inner img {
+    width: 100%; 
+    margin: auto;
+    max-height:500px;
+}
+.cc{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+    color:cornsilk;
+}
+.header{
+    width: 100%;
+    background-color:#051622;
+}
+.line{
+    background-color: whitesmoke;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 0.5px;
+}
+
+.header img{
+    width: auto;
+    height: 150px;
+}
+.overlay {
+    
+  height: 0;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color:#051622 ; /* Black fallback color */
+opacity: 0.9;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.overlay-content {
+  position: relative;
+  top: 15%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+.overlay strong{
+  color: #1BA098;
+  font-family: lato;
+  font-size: 32px;
+  padding: 8px;
+}
+.overlay li{
+  text-decoration: none;
+  overflow: hidden;
+  color: White;
+  font-family: lato;
+  font-size: 30px;
+  padding: 8px;
+  display: block;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.overlay li:hover , .overlay li:focus{
+  color:wheat;
+  background-color: darkcyan;
+}
+.overlay .closeBtn{
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 50px;
+  color: #1BA098;
+}
+.item{
+  margin: 10px;
+}
+.itemcard{
+  width: 250px;
+  height: auto;
+  margin: 10px;
+  box-shadow: 0px 2px 4px 0px white;
+}
+.itemcard:hover{
+  box-shadow: 0px 4px 6px 0px white;
+}
+.itemcard .info{
+  border-top:1px solid #051622 ;
+  color: #1BA098;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.itemcard img{
+  width: 250px;
+  height: 250px;
+}
+.Footer{
+  color: white;
+  padding: 25px;
+}
+.share{
+  font-size: xx-large;
+}
+.wa{
+  color: forestgreen;
+}
+.insta{
+  color: crimson;
+}
+.fb{
+  color: blue;
+}
+.tw{
+  color: cornflowerblue;
+}
+.h{
+  color: #1BA098;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 15px;
+}
+@media screen and (max-height: 60px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+@media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  @media (max-width: 900px) {
+    .carousel-caption {
+      display: none; 
+    }
+    .carousel-inner img{
+        width:100%;
+        height:300px;
+        margin:auto;
+    }
+    .itemcard {
+      width:75%;
+      margin-left: 13%;
+    }
+   .itemcard img{
+     width:100%;
+   }
+  }
+
